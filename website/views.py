@@ -4,12 +4,12 @@ from django.http import HttpResponse
 
 
 def index_view(request):
-    return HttpResponse("hello")
+    return render(request,"index.html")
 
 
 def contact_view(request):
-    return HttpResponse("contact")
+    return render(request,"contact.html")
 
 
 def about_view(request):
-    return HttpResponse("about")
+    return render(request,"a/about.html")
